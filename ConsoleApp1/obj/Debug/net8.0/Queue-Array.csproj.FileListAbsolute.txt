@@ -1,0 +1,15 @@
+C:\Code\CSE210\LQueue-Fixed-Size-Array\ConsoleApp1\bin\Debug\net8.0\Queue-Array.exe
+C:\Code\CSE210\LQueue-Fixed-Size-Array\ConsoleApp1\bin\Debug\net8.0\Queue-Array.deps.json
+C:\Code\CSE210\LQueue-Fixed-Size-Array\ConsoleApp1\bin\Debug\net8.0\Queue-Array.runtimeconfig.json
+C:\Code\CSE210\LQueue-Fixed-Size-Array\ConsoleApp1\bin\Debug\net8.0\Queue-Array.dll
+C:\Code\CSE210\LQueue-Fixed-Size-Array\ConsoleApp1\bin\Debug\net8.0\Queue-Array.pdb
+C:\Code\CSE210\LQueue-Fixed-Size-Array\ConsoleApp1\obj\Debug\net8.0\Queue-Array.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\CSE210\LQueue-Fixed-Size-Array\ConsoleApp1\obj\Debug\net8.0\Queue-Array.AssemblyInfoInputs.cache
+C:\Code\CSE210\LQueue-Fixed-Size-Array\ConsoleApp1\obj\Debug\net8.0\Queue-Array.AssemblyInfo.cs
+C:\Code\CSE210\LQueue-Fixed-Size-Array\ConsoleApp1\obj\Debug\net8.0\Queue-Array.csproj.CoreCompileInputs.cache
+C:\Code\CSE210\LQueue-Fixed-Size-Array\ConsoleApp1\obj\Debug\net8.0\Queue-Array.sourcelink.json
+C:\Code\CSE210\LQueue-Fixed-Size-Array\ConsoleApp1\obj\Debug\net8.0\Queue-Array.dll
+C:\Code\CSE210\LQueue-Fixed-Size-Array\ConsoleApp1\obj\Debug\net8.0\refint\Queue-Array.dll
+C:\Code\CSE210\LQueue-Fixed-Size-Array\ConsoleApp1\obj\Debug\net8.0\Queue-Array.pdb
+C:\Code\CSE210\LQueue-Fixed-Size-Array\ConsoleApp1\obj\Debug\net8.0\Queue-Array.genruntimeconfig.cache
+C:\Code\CSE210\LQueue-Fixed-Size-Array\ConsoleApp1\obj\Debug\net8.0\ref\Queue-Array.dll
