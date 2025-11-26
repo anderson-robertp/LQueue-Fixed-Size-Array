@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Code\\CSE210\\LQueue-Fixed-Size-Array\\ConsoleApp1\\LQueue-Array.csproj",
-      "projectName": "LQueue-Array",
-      "projectPath": "C:\\Code\\CSE210\\LQueue-Fixed-Size-Array\\ConsoleApp1\\LQueue-Array.csproj",
+      "projectUniqueName": "C:\\Code\\CSE210\\LQueue-Fixed-Size-Array\\ConsoleApp1\\Queue-Array.csproj",
+      "projectName": "Queue-Array",
+      "projectPath": "C:\\Code\\CSE210\\LQueue-Fixed-Size-Array\\ConsoleApp1\\Queue-Array.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
       "outputPath": "C:\\Code\\CSE210\\LQueue-Fixed-Size-Array\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
