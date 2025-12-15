@@ -49,6 +49,8 @@ public class AQueueTests
         Assert.AreEqual(10, q.Dequeue());
         Assert.AreEqual(1, q.Size);
         Assert.AreEqual(20, q.Peek());
+        Assert.False(q.Contains(10));
+        Assert.True(q.Contains(20));
     }
     
     /// <summary>

@@ -64,7 +64,7 @@ public class AQueue<T>
         // Check if the queue is empty
         if (_size == 0) throw new InvalidOperationException("Queue is empty");
         // Remove the item from the front of the queue
-        T item = _data[0];
+        T item = _data[_front];
         // Update the front and size
         _front = (_front + 1) % _data.Length;
         _size--;
