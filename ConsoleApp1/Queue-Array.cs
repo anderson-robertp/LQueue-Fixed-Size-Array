@@ -96,6 +96,7 @@ public class AQueue<T>
         // Check if the queue contains the specified item
         foreach (T queueItem in _data)
         {
+            if (queueItem == null) continue;
             if (queueItem.Equals(item)) return true;
         }
         return false;

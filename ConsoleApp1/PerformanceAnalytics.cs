@@ -28,19 +28,24 @@ public static class PerformanceAnalytics
     /// </summary>
     public static void Run()
     {
-        int[] sizes = {10,100,1000,10000};
+        int[] sizes = { 10, 10, 100, 1000, 10000, 100000 };
+        
+        int trials = 10;
         
         Console.WriteLine("Performance Analytics");
         Console.WriteLine("=====================");
+        
+        // Warmup
+        Warmup();
         
         foreach (int size in sizes)
         {
             Console.WriteLine($"Size: {size}");
             
-            MeasureEnqueue(size);
-            MeasureDequeue(size);
-            MeasurePeek(size);
-            MeasureContains(size);
+            MeasureEnqueue(size, trials);
+            MeasureDequeue(size, trials);
+            MeasurePeek(size, trials);
+            MeasureContains(size, trials);
         }
     }
 
@@ -65,6 +70,8 @@ public static class PerformanceAnalytics
     /// <returns>Returns an instance of <see cref="AQueue{T}"/> initialized with the specified number of elements.</returns>
     private static AQueue<int> Build(int size)
     {
+        
+        
         var q = new AQueue<int>(size + 1);
         for (int i = 0; i < size; i++)
         {
@@ -72,99 +79,86 @@ public static class PerformanceAnalytics
         }
         return q;
     }
+    
+    // Warm up
+    private static void Warmup()
+    {
+        var q = Build(10000);
+        q.Enqueue(-1);
+        q.Peek();
+        q.Contains(-1);
+        q.Dequeue();
+    }
 
     /// <summary>
     /// Measures the time taken to perform the enqueue operation on a queue of the specified size.
     /// </summary>
     /// <param name="size">The size of the queue for which the enqueue operation is to be measured.</param>
-    private static void MeasureEnqueue(int size)
+    /// <param name="trials"></param>
+    private static void MeasureEnqueue(int size, int trials)
     {
-        var q = Build(size);
-        
-        // Warmup isn't measured
-        for (int i = 0; i < 1000; i++)
-        {
-            q.Enqueue(i % size);
-            q.Dequeue();
-        }
-        
         // Timed operations
         long total = 0;
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < trials; i++)
         {
-            q = Build(size); // reset queue
+            var q = Build(size); // reset queue
             total += MeasureTime(() => q.Enqueue(-1));
-            Console.WriteLine($"Enqueue: {total / 10} ticks");
         }
+        Console.WriteLine($"Enqueue: {total / trials} ticks");
     }
 
     /// <summary>
     /// Measures the time taken to perform the dequeue operation on a queue of the specified size.
     /// </summary>
     /// <param name="size">The size of the queue for which the dequeue operation is to be measured.</param>
-    private static void MeasureDequeue(int size)
-    {
-        var q = Build(size);
-        
-        // Warmup isn't measured
-        for (int i = 0; i < 1000; i++)
-        {
-            q.Enqueue(i % size);
-            q.Dequeue();
-        }
+    /// <param name="trials"></param>
+    private static void MeasureDequeue(int size, int trials) {
         
         // Timed operations
         long total = 0;
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < trials; i++)
         {
-            q = Build(size); // reset queue
+            var q = Build(size); // reset queue
             total += MeasureTime(() => q.Dequeue());
-            Console.WriteLine($"Dequeue: {total / 10} ticks");
+            
         }
+        Console.WriteLine($"Dequeue: {total / trials} ticks");
     }
 
     /// <summary>
     /// Measures the time taken to perform the peek operation on a queue of the specified size.
     /// </summary>
     /// <param name="size">The size of the queue for which the peek operation is to be measured.</param>
-    private static void MeasurePeek(int size)
+    /// <param name="trials"></param>
+    private static void MeasurePeek(int size, int trials)
     {
-        var q = Build(size);
-        
-        // Warmup isn't measured
-        for (int i = 0; i < 1000; i++)
-        {
-            q.Enqueue(i % size);
-            q.Dequeue();
-        }
         
         // Timed operations
         long total = 0;
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < trials; i++)
         {
-            q = Build(size); // reset queue
+            var q = Build(size); // reset queue
             total += MeasureTime(() => q.Peek());
-            Console.WriteLine($"Peek: {total / 10} ticks");
+            
         }
+        Console.WriteLine($"Peek: {total / trials} ticks");
     }
-    private static void MeasureContains(int size)
+
+    /// <summary>
+    /// Measures the time taken to execute the "Contains" operation on a queue of a given size over multiple trials.
+    /// </summary>
+    /// <param name="size">The size of the queue on which the "Contains" operation will be tested.</param>
+    /// <param name="trials">The number of trials to perform for measuring the "Contains" operation.</param>
+    private static void MeasureContains(int size, int trials)
     {
-        var q = Build(size);
-        
-        // Warmup isn't measured
-        for (int i = 0; i < 1000; i++)
-        {
-            q.Enqueue(i % size);
-            q.Dequeue();
-        }
-        
         // Timed operations
         long total = 0;
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < trials; i++)
         {
-            q = Build(size); // reset queue
+            var q = Build(size); // reset queue
             total += MeasureTime(() => q.Contains(-1));
-            Console.WriteLine($"Contains: {total / 10} ticks");
+            
         }
+        Console.WriteLine($"Contains: {total / trials} ticks");
     }
 }

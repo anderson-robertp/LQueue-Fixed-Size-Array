@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Test_LQueue_Array
-build_property.ProjectDir = C:\Code\CSE210\LQueue-Fixed-Size-Array\Test-Queue-Array\
+build_property.ProjectDir = C:\Users\admin\RiderProjects\LQueue-Fixed-Size-Array\Test-Queue-Array\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

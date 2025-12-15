@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Code\\CSE210\\LQueue-Fixed-Size-Array\\ConsoleApp1\\Queue-Array.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\RiderProjects\\LQueue-Fixed-Size-Array\\ConsoleApp1\\Queue-Array.csproj",
       "projectName": "Queue-Array",
-      "projectPath": "C:\\Code\\CSE210\\LQueue-Fixed-Size-Array\\ConsoleApp1\\Queue-Array.csproj",
+      "projectPath": "C:\\Users\\admin\\RiderProjects\\LQueue-Fixed-Size-Array\\ConsoleApp1\\Queue-Array.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Code\\CSE210\\LQueue-Fixed-Size-Array\\ConsoleApp1\\obj\\",
+      "outputPath": "C:\\Users\\admin\\RiderProjects\\LQueue-Fixed-Size-Array\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"

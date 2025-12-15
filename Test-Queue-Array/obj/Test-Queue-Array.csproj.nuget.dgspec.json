@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Code\\CSE210\\LQueue-Fixed-Size-Array\\Test-Queue-Array\\Test-Queue-Array.csproj": {}
+    "C:\\Users\\admin\\RiderProjects\\LQueue-Fixed-Size-Array\\Test-Queue-Array\\Test-Queue-Array.csproj": {}
   },
   "projects": {
-    "C:\\Code\\CSE210\\LQueue-Fixed-Size-Array\\ConsoleApp1\\Queue-Array.csproj": {
+    "C:\\Users\\admin\\RiderProjects\\LQueue-Fixed-Size-Array\\ConsoleApp1\\Queue-Array.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Code\\CSE210\\LQueue-Fixed-Size-Array\\ConsoleApp1\\Queue-Array.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\RiderProjects\\LQueue-Fixed-Size-Array\\ConsoleApp1\\Queue-Array.csproj",
         "projectName": "Queue-Array",
-        "projectPath": "C:\\Code\\CSE210\\LQueue-Fixed-Size-Array\\ConsoleApp1\\Queue-Array.csproj",
+        "projectPath": "C:\\Users\\admin\\RiderProjects\\LQueue-Fixed-Size-Array\\ConsoleApp1\\Queue-Array.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Code\\CSE210\\LQueue-Fixed-Size-Array\\ConsoleApp1\\obj\\",
+        "outputPath": "C:\\Users\\admin\\RiderProjects\\LQueue-Fixed-Size-Array\\ConsoleApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -62,14 +62,14 @@
         }
       }
     },
-    "C:\\Code\\CSE210\\LQueue-Fixed-Size-Array\\Test-Queue-Array\\Test-Queue-Array.csproj": {
+    "C:\\Users\\admin\\RiderProjects\\LQueue-Fixed-Size-Array\\Test-Queue-Array\\Test-Queue-Array.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Code\\CSE210\\LQueue-Fixed-Size-Array\\Test-Queue-Array\\Test-Queue-Array.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\RiderProjects\\LQueue-Fixed-Size-Array\\Test-Queue-Array\\Test-Queue-Array.csproj",
         "projectName": "Test-Queue-Array",
-        "projectPath": "C:\\Code\\CSE210\\LQueue-Fixed-Size-Array\\Test-Queue-Array\\Test-Queue-Array.csproj",
+        "projectPath": "C:\\Users\\admin\\RiderProjects\\LQueue-Fixed-Size-Array\\Test-Queue-Array\\Test-Queue-Array.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Code\\CSE210\\LQueue-Fixed-Size-Array\\Test-Queue-Array\\obj\\",
+        "outputPath": "C:\\Users\\admin\\RiderProjects\\LQueue-Fixed-Size-Array\\Test-Queue-Array\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -84,8 +84,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Code\\CSE210\\LQueue-Fixed-Size-Array\\ConsoleApp1\\Queue-Array.csproj": {
-                "projectPath": "C:\\Code\\CSE210\\LQueue-Fixed-Size-Array\\ConsoleApp1\\Queue-Array.csproj"
+              "C:\\Users\\admin\\RiderProjects\\LQueue-Fixed-Size-Array\\ConsoleApp1\\Queue-Array.csproj": {
+                "projectPath": "C:\\Users\\admin\\RiderProjects\\LQueue-Fixed-Size-Array\\ConsoleApp1\\Queue-Array.csproj"
               }
             }
           }
@@ -122,8 +122,10 @@
               "version": "[4.5.0, )"
             },
             "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[6.0.4, )"
             }
           },
           "imports": [

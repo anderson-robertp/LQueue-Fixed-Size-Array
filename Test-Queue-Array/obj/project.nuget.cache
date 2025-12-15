@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "POV9/3OeKaM=",
+  "dgSpecHash": "wWTVhZUJj9E=",
   "success": true,
-  "projectFilePath": "C:\\Code\\CSE210\\LQueue-Fixed-Size-Array\\Test-Queue-Array\\Test-Queue-Array.csproj",
+  "projectFilePath": "C:\\Users\\admin\\RiderProjects\\LQueue-Fixed-Size-Array\\Test-Queue-Array\\Test-Queue-Array.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\admin\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\coverlet.collector\\6.0.4\\coverlet.collector.6.0.4.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.net.test.sdk\\17.8.0\\microsoft.net.test.sdk.17.8.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
